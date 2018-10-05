@@ -25,7 +25,7 @@ phases:
       # - command
   build:
     commands:
-      - alias composer="php /usr/local/bin/composer" && composer require "magento/magento2ce:*" --no-interaction --prefer-dist \ && ./vendor/bin/parallel-lint src tests \ && ./vendor/bin/phpunit --verbose --no-coverage \ && ./vendor/bin/phpcs src tests --standard=psr2 -sp
+      - alias composer="php /usr/local/bin/composer" && composer require "magento/magento2ce: *" --no-interaction --prefer-dist \ && ./vendor/bin/parallel-lint src tests \ && ./vendor/bin/phpunit --verbose --no-coverage \ && ./vendor/bin/phpcs src tests --standard=psr2 -sp
       # - command
     #finally:
       # - command
