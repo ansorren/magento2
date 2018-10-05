@@ -1,0 +1,50 @@
+version: 0.2
+
+#env:
+  #variables:
+     # key: "value"
+     # key: "value"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+
+phases:
+  #install:
+    #commands:
+      # - command
+      # - command
+    #finally:
+      # - command
+      # - command
+  #pre_build:
+    #commands:
+      # - command
+      # - command
+    #finally:
+      # - command
+      # - command
+  build:
+    commands:
+      - alias composer="php /usr/local/bin/composer" && composer require "magento/magento2ce":"*" --no-interaction --prefer-dist \ && ./vendor/bin/parallel-lint src tests \ && ./vendor/bin/phpunit --verbose --no-coverage \ && ./vendor/bin/phpcs src tests --standard=psr2 -sp
+      # - command
+    #finally:
+      # - command
+      # - command
+  #post_build:
+    #commands:
+      # - command
+      # - command
+    #finally:
+      # - command
+      # - command
+#artifacts:
+  #files:
+    # - location
+    # - location
+    # - name
+  #discard-paths: yes
+  #base-directory: location
+#cache:
+  #paths:
+    # - path
+    # - path
