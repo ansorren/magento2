@@ -25,7 +25,7 @@ phases:
       # - command
   build:
     commands:
-      - alias composer="php /usr/local/bin/composer" && composer require magento/product-community-edition 2.1.2 --no-update && composer update
+      - alias composer="php /usr/local/bin/composer" && composer require magento/magento2ce --no-update && composer update
       # - command
     #finally:
       # - command
