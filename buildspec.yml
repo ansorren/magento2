@@ -37,14 +37,7 @@ phases:
     #finally:
       # - command
       # - command
-#artifacts:
-  #files:
-    # - location
-    # - location
-    # - name
-  #discard-paths: yes
-  #base-directory: location
-#cache:
-  #paths:
-    # - path
-    # - path
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'target/my-web-app'
