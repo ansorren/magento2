@@ -40,4 +40,4 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: 'app/code/Magento'
+  base-directory: '*'
