@@ -38,8 +38,9 @@ phases:
       # - command
       # - command
 artifacts:
-  type: S3
   packaging: zip
   files:
     - '**/*'
   base-directory: '*'
+  discard-paths: no
+
