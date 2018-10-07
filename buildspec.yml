@@ -38,7 +38,8 @@ phases:
       # - command
       # - command
 artifacts:
-  type: CODEPIPELINE
+  type: S3
+  packaging: zip
   files:
     - '**/*'
   base-directory: '*'
