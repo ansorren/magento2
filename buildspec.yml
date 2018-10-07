@@ -42,6 +42,7 @@ phases:
       # - command
       # - command
 artifacts:
+  type: CODEPIPELINE
   discard-paths: no
   files:
     - code_output.zip
