@@ -30,7 +30,7 @@ phases:
       - echo "move all content to code_output dir"
       - find . ! -regex '.*/code_output' ! -regex '.' -exec cp -r '{}' code_output \;
       - echo "zip code_output"
-      - zip -r code_output.zip code_output
+      - zip -r code_output.zip code_output && ls -l && echo $PWD
     #finally:
       # - command
       # - command
@@ -43,7 +43,7 @@ phases:
       # - command
 artifacts:
   files:
-    - 'code_output.zip'
+    - code_output.zip
   base-directory: '*'
   discard-paths: no
 
