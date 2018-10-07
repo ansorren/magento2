@@ -42,8 +42,9 @@ phases:
       # - command
       # - command
 artifacts:
+  discard-paths: no
   files:
     - code_output.zip
   base-directory: '*'
-  discard-paths: no
+  
 
