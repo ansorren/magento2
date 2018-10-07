@@ -30,7 +30,7 @@ phases:
       - echo "move all content to code_output dir"
       - find . ! -regex '.*/code_output' ! -regex '.' -exec cp -r '{}' code_output \;
       - echo "zip code_output"
-      - apt-get install zip && zip -r code_output.zip code_output
+      - apk --update add zip && zip -r code_output.zip code_output
     #finally:
       # - command
       # - command
