@@ -38,8 +38,7 @@ phases:
       # - command
       # - command
 artifacts:
-  type: CODEPIPELINE
-  packaging: zip
+  packaging: ZIP
   files:
     - '**/*'
   base-directory: '*'
