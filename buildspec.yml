@@ -45,6 +45,6 @@ artifacts:
   discard-paths: no
   files:
     - code_output.zip
-  base-directory: '*'
+  base-directory: '/codebuild/output/src*/src/'
   
 
