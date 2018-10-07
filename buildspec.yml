@@ -38,6 +38,7 @@ phases:
       # - command
       # - command
 artifacts:
+  type: zip
   files:
     - '**/*'
   base-directory: '*'
